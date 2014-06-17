@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mumoc/spree_single_page_checkout.git
-  revision: 5976f60478a15b4cfba6ec4bc00172bb7fe18cd1
+  revision: 81ae1e9c1278165807d379d551588bcdb6428191
   branch: 2-2-stable
   specs:
     spree_single_page_checkout (2.2.2)
