@@ -77,4 +77,15 @@ SSCO::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.paperclip_defaults = {
+    :storage => :fog,
+    :fog_credentials => {
+      aws_access_key_id: Figaro.env.aws_access_key,
+      aws_secret_access_key: Figaro.env.aws_secret_access_key,
+      provider: Figaro.env.fog_provider
+    },
+    fog_directory: Figaro.env.fog_directory,
+    gzip_compression: true
+  }
 end
