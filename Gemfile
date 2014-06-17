@@ -13,6 +13,10 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 gem 'spree', '2.2.2'
 gem 'spree_gateway',
   git: 'https://github.com/spree/spree_gateway.git',
